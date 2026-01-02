@@ -80,7 +80,7 @@ npm run build
 
 ## Screenshots
 
-![Markdown-Preview App](public/image.png)
+![Markdown-Preview App](/image.png)
 
 ## 👤 Author
 
