@@ -1,6 +1,6 @@
 # Markdown Preview App
 
-A simple yet powerful **Markdown Preview Application** built with **React 19 + Vite**.  
+A simple yet powerful **Markdown Preview Application** built with **Vue JS**.  
 The app allows users to write Markdown on one side and see a live HTML preview on the other side. It also includes autosave to localStorage and file handling features to make working with Markdown more seamless.
 
 ---
@@ -48,17 +48,16 @@ npm run build
 
 ## Technology Stack and Architecture
 
-- **React 19** with functional components and hooks
-- **Vite** for fast development and builds
+- **Vue JS** with functional components and hooks
 - **Tailwind** for CSS styling
-- **react-markdown** for Markdown parsing and rendering
+- **vUE-markdown** for Markdown parsing and rendering
 - **localStorage** for persistence 
 -- **ErrorBoundary** for handling errors
 
 ---
 
 ## Architecture Decisions 
-- **Markdown Parsing**: Chose *react-markdown*
+- **Markdown Parsing**: Chose *Vue-markdown*
  for reliable rendering of common Markdown elements.
 
 - **Autosave**: Implemented via a debounced useEffect that writes to localStorage after 500ms of inactivity.
@@ -69,31 +68,15 @@ npm run build
 
 ## Known Issues / Limitations
 
-- No syntax highlighting for code blocks (would require integration with *react-syntax-highlighter*).
+- No syntax highlighting for code blocks .
 
 - API integration is notimplemented (only localStorage persistence for now).
 
 - Error boundary reloads the app when navigating home — could be enhanced to reset state without full refresh.
 
-- Limited support for advanced Markdown features (tables, footnotes, math).
+- Limited support for advanced Markdown features. Built for just the basic markdown stuff.
 
----
-
-## Future Improvements
-
-- Add syntax highlighting for code blocks in the preview.
-
-- Enable live Markdown linting in the editor.
-
-- Support more advanced Markdown features (tables, task lists, footnotes).
-
-- Implement full API integration for cloud persistence of markdown files.
-
-- Add theme switching (light/dark mode).
-
-- Improve editor experience using Monaco or CodeMirror for syntax highlighting.
-
---- 
+- Some of the elements (Headings and code blocks) have a separate style for them. Iwas unable to style them using the editor's styling for elements or tailwind
 
 ## Screenshots
 
